@@ -22,7 +22,7 @@ function Movies() {
                 <th className="px-4 py-3 text-left">Title</th>
                 <th className="px-4 py-3 text-left">Gener</th>
                 <th className="px-4 py-3 text-left">Stock</th>
-                <th className="px-4 py-3 text-left">Rate</th>
+                <th className="px-4 py-4 text-left">Rate</th>
                 <th className="px-4 py-3 text-center">Action</th>
           
         </tr>
