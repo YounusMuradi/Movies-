@@ -12,7 +12,9 @@ function Movies() {
         <div className="flex items-start justify-center h-1 min-h-screen py-10 bg-gray-100 ">
             <div className="w-full max-w-5xl p-6 bg-white rounded-lg shadow-md ">
 
-                
+                    {movies.length>0 &&(
+                        <p className="my-6 text-center text-gray-600 ">There are {movies.length} movies in the list</p>
+                    )}
          <table className="min-w-full overflow-hidden border border-gray-300 rounded-lg first-letter:marker: ">
          <thead className="text-green-700 bg-gray-300 ">    
         <tr>
