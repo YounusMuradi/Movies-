@@ -16,7 +16,7 @@ function Movies() {
                         <p className="my-6 text-center text-gray-600 ">There are {movies.length} movies in the list</p>
                     )}
          <table className="min-w-full overflow-hidden border border-gray-300 rounded-lg ">
-         <thead className="text-green-700 bg-gray-200 ">    
+         <thead className="text-green-700 bg-gray-300 ">    
         <tr>
            
                 <th className="px-4 py-3 text-left">Title</th>
@@ -29,7 +29,7 @@ function Movies() {
           </thead>
         <tbody>
             {movies.map((movie)=> (
-                <tr className="transition border-t hover:bg-green-50">
+                <tr key={movie._id} className="transition border-t hover:bg-green-50">
             <td className="px-4 py-3 font-medium text-gray-800">{movie.title}</td>
             <td className="px-4 py-3 text-gray-600">{movie.genre.name}</td>
             <td className="px-4 py-3 text-gray-600">{movie.numberInStock}</td>
